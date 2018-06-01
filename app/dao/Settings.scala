@@ -8,7 +8,7 @@ object Settings extends Connect[models.Setting] with Create[models.Setting] {
   val tableName = "settings"
 
   override def create(obj: Setting): Try[Long] = {
-    var data: Try[Long] = Try(throw new Exception("Error with insert user"))
+    var data: Try[Long] = Try(throw new Exception("Error with insert setting"))
     withDatabase { database =>
       val connection = database.getConnection
       val sql: String = s"INSERT INTO `$tableName` " +
