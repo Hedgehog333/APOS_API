@@ -2,6 +2,6 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /v1/users/:id                    controllers.UserCntroller.info(id: Long)
-POST    /v1/users/signIn                 controllers.UserCntroller.signIn
-POST    /v1/users                        controllers.UserCntroller.singUp
+GET     /v1/users/:id                    controllers.UserController.info(id: Long)
+POST    /v1/users/signIn                 controllers.UserController.signIn
+POST    /v1/users                        controllers.UserController.singUp
