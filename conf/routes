@@ -8,3 +8,5 @@ POST    /v1/users                        controllers.UserController.singUp
 
 GET     /v1/products/:id                 controllers.ProductController.getOne(id: Long)
 GET     /v1/products                     controllers.ProductController.getAll
+
+POST    /v1/orders/checkcode             controllers.StorageBoxController.check
